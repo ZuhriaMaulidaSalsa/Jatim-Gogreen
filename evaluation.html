@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- elemen <!DOCTYPE> untuk deklarasi tipe dokumen HTML -->
+<html lang="id">
+<!-- elemen <html> untuk container atau root dokumen HTML -->
+<head>
+<!-- elemen <head> untuk kontainer informasi dokumen HTML yang tidak ditampilkan dalam web browser -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- elemen <link> untuk menghubungkan file html dengan file css eksternal -->
+	<title>Evaluation</title>
+</head>
+<body>
+<!-- elemen <body> untuk kontainer informasi atau data yang akan ditampilkan dalam web browser -->
+
+
+	<div class="header"><!-- untuk mengelompokkan elemen menjadi satu class header -->
+            <div>
+                <h1>JATIM Gogreen</h1><!-- untuk memberikan judul pada header-->
+				<h2>Mari Bergabung Menjadi Relawan</h2><!--untuk memberikan sub judul pada header-->
+            </div>
+    </div>
+
+
+
+	<div class="menu">
+		<a href="index.html">Homepage</a> 
+		<a href="form.html">Pendaftaran Relawan</a>
+		<a href="evaluation.html" class="aktif">Evaluation</a>
+		<a href="aboutus.html">About Us</a>
+		<!-- elemen <a> dengan atribut href untuk membuat link menuju dokumen lain -->
+	</div>
+
+
+
+	<div class="content-wrapper">
+		<div class="content" id="cbg" >
+			<h3> Tabel kelengkapan dan kesesuaian website terhadap spesifikasi tugas : </h3>
+			<!-- elemen <h3> untuk membuat judul atau sub judul dengan tulisan lebih kecil dalam web browser -->
+			<table>
+			<!-- elemen <table> untuk menampilkan tabel dalam web browser -->
+				<tr>
+				<!-- elemen <tr> untuk membuat baris pada tabel dalam web browser -->
+					<th>Spesifikasi</th>
+					<!-- elemen <th> untuk baris dan kolom bagian paling atas pada tabel dalam web browser -->
+					<th>Ringkasan Kesesuaian</th>
+				</tr>
+				<tr>
+					<td>Section</td>
+					<!-- elemen <td> untuk membuat kolom pada tabel dalam web browser -->
+					<td>Ada 5 section yaitu header, menu, content, sidebar, dan footer</td>
+				</tr>
+				<tr>
+					<td>Jumlah Halaman</td>
+					<td>Ada 4 Halaman, yaitu :
+						<ul><li><i>Homepage</i> berisi segala informasi dan link yang berkaitan dengan website yang sesuai dengan tema yang telah ditentukan.</li>
+						<!-- elemen <i> untuk membuat tulisan menjadi miring dalam web browser -->
+						<li>Form berisi data inputan relawan</li>
+						<li>Evaluation berisi ringkasan untuk menjelaskan kelengkapan dan kesesuaian dari website yang dibuat terhadap spesifikasi tugas.</li>
+						<li>About Us berisi nama mata kuliah, kelas, nama kelompok serta identitas mahasiswa, dan tabel untuk menjelaskan pembagian pengerjaan. Dan juga berisi URL dari gambar yang digunakan website yang tersedia online.</li></ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Nama File untuk Halaman Pertama</td>
+					<td>Nama file halaman utama sesuai dengan aturan yaitu <b>index.html</b></td>
+					<!-- elemen <i> untuk membuat tulisan menjadi miring dalam web browser -->
+				</tr>
+				<tr>
+					<td>Penggunaan Elemen HTML form</td>
+					<td>Lengkap : <i>textbox, dropdown menu, check box, radio button, text area,</i> dan <i>submit button</i></td>
+				</tr>
+				<tr>
+					<td>Jenis Validasi Form</td>
+					<td>Validasi form lengkap : Masukan wajib, format numerik, format alfabet, format alfanumerik, format email, masukan dengan panjang digit dan panjang karakter tertentu, dan masukan kesesuaian tanggal </td>
+				</tr>
+				<tr>
+					<td>Pesan Error Validasi Form</td>
+					<td>Untuk pesan eror validasi form kami menggunakan javascript(innerHTML) tidak menggunakan kotak dialog alert</td>
+				</tr>
+				<tr>
+					<td>Desain Antar Halaman</td>
+					<td>Konsisten</td>
+				</tr>
+				<tr>
+					<td>Website terhadap tema</td>
+					<td>Sesuai tema : <i>Philanthropy Organization</i> untuk tujuan pelestarian alam dan lingkungan
+					<br>Website : Relawan pelestarian lingkungan wilayah Jawa Timur</td>
+				</tr>
+			</table>
+		</div>
+
+
+
+		<div class="sidebar"><!-- untuk mengelompokkan elemen menjadi satu class sidebar -->
+				<p>Klik <a href="https://environment-indonesia.com/articles/upaya-pelestarian-lingkungan-hidup/">disini</a> selengkapnya mengenai upaya pelestarian lingkungan</p> 
+				<img src="img/lingkungan.jpg" alt="foto tanaman">
+				<p><a href="https://www.indorelawan.org/">klik</a> untuk ambil peran jadi Relawan di Indonesia</p>
+				<p><a href="https://www.greenpeace.org/indonesia/aksi/bergabung-menjadi-relawan/">klik</a> Untuk bergabung Relawan Indonesia Asia Tenggara</p>
+				<!-- elemen a dengan href untuk menghubungkan tautan website lain -->
+        </div>
+	</div>
+
+
+
+	<div class="footer">
+        <div class="footer-wrapper">
+            <div class="lingkaran" id="img1"></div>
+            <div class="lingkaran" id="img2"></div>
+            <div class="lingkaran" id="img3"></div>
+            <div class="lingkaran" id="img4"></div>
+            <div class="lingkaran" id="img5"></div>
+             <!-- mengelompokkan elemen menjadi satu class lingkaran dan selector id untuk dipanggil dan ditampilkan pada halaman web-->
+        </div><br>
+        <p>Tim 04 DPW B © 2022 | All Right Reserved</p>
+        <p>Designed By TIM 04 DPW B</p>
+        <!-- elemen <p> untuk membuat paragraph dalam web browser -->
+    </div>
+
+</body>
+</html>

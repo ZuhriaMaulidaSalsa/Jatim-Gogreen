@@ -1,0 +1,131 @@
+<!DOCTYPE html> <!-- deklarasi tipe dokumen html-->
+<html lang="id"> <!-- container/root dokumen html-->
+
+<head> <!-- menampilkan informasi yang tidak ditampilkan pada halam web-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css"><!--hyperlink untuk memanggil file css pada html-->
+	<!-- Judul Halaman -->
+	<title>About Us</title> 
+</head>
+
+
+<body>
+	
+	<!-- display Header -->
+	<div class="header"><!-- untuk mengelompokkan elemen menjadi satu class header -->
+            <div>
+                <h1>JATIM Gogreen</h1><!-- untuk memberikan judul pada header-->
+				<h2>Mari Bergabung Menjadi Relawan</h2><!--untuk memberikan sub judul pada header-->
+            </div>
+    </div>
+
+	<!-- display Menu -->
+	<div class="menu">
+		<a href="index.html">Homepage</a>
+		<a href="form.html">Pendaftaran Relawan</a>
+		<a href="evaluation.html">Evaluation</a>
+		<a href="aboutus.html" class="aktif">About us</a>
+		<!-- elemen <a> dengan atribut href untuk membuat link menuju dokumen lain -->
+	</div>
+	
+	<div class="content-wrapper"> <!-- untuk membungkus content dan sidebar yg berdampingan agar lebih rapi --> 
+
+		<!-- display content -->
+		<div class="content" id="cbg">
+			<h1>Dasar Pemrograman Web</h1><!--menampilkan text dasar pemrograman web dengan ukuran default h1-->
+			<h1>B</h1>
+			<h4>Tim Penyusun : </h4><!--menampilkan text dasar pemrograman web dengan ukuran default h4-->
+			<div class="content-name"><!--blok baru dengan style yg terdapat pada css content-name-->
+				<div>
+					<img src="img/fatur.png" alt="memoji1"><br><!--relative path untuk menampilkan memoji pada halaman web-->
+					Fatur Rosek<br>
+					210411100146
+				</div>
+				<div>
+					<img src="img/rahma.png"  alt="memoji2"><br><!--relative path untuk menampilkan memoji pada halaman web-->
+					Rahma Nurhaliza<br>
+					210411100176
+				</div>
+				<div>
+					<img src="img/prio.png"  alt="memoji3"><br><!--relative path untuk menampilkan memoji pada halaman web-->
+					Prio Budi Laksono<br>
+					210411100177
+				</div>
+				<div>
+					<img src="img/salsa.png"  alt="memoji4"><br><!--relative path untuk menampilkan memoji pada halaman web-->
+					Zuhria Maulida Salsa<br>
+					210411100180
+				</div>
+			</div><br><br>
+			<h4> Tabel pembagian pengerjaan : </h4><br>
+			<table><!--tag pembuka untuk membuat tabel-->
+				<tr>
+					<th>Nama</th>
+					<th>NIM</th>
+					<th>Bagian Pengerjaan</th>
+				</tr>
+				<tr>
+					<td>Fatur Rosek</td>
+					<td>210411100146</td>
+					<td>Layout dan Halaman Evaluation</td>
+				</tr>
+				<tr>
+					<td>Rahma Nurhaliza</td>
+					<td>210411100176</td>
+					<td>Layout dan Halaman Homepage</td>
+				</tr>
+				<tr>
+					<td>Prio Budi Laksono</td>
+					<td>210411100177</td>
+					<td>Layout dan Halaman Form</td>
+				</tr>
+				<tr>
+					<td>Zuhria Maulida Salsa</td>
+					<td>210411100180</td>
+					<td>Layout dan Halaman About Us</td>
+				</tr>
+			</table><br><br><br>
+			<h4>Sumber Media : </h4>
+			<a href="https://www.pexels.com/photo/a-man-and-a-woman-collecting-garbage-beside-the-river-7656985/">Link content background</a>
+			<a href="https://twitter.com/kuri_sss303/status/1395337847545090048/photo/1"> Link header background</a>
+			<a href="https://duniapendidikan.co.id/wp-content/uploads/2020/03/gambar-pelestarian.png">Link gambar sidebar</a>
+			<a href="https://id.pinterest.com/pin/537898749252532942/">Link icon instagram</a>
+			<a href="https://id.pinterest.com/pin/648940627562786137/">Link icon facebook</a>
+			<a href="https://id.pinterest.com/pin/14918242506587599/">Link icon youtube</a>
+			<a href="https://id.pinterest.com/pin/136022851235438823/">Link icon twitter</a>
+			<a href="https://id.pinterest.com/pin/68117013104858741/">Link icon email</a>
+			<a href="https://id.pinterest.com/pin/818740407268938038/">Link memoji 1</a>
+			<a href="https://id.pinterest.com/pin/625015254548459943/">Link memoji 2</a>
+			<a href="https://id.pinterest.com/pin/579345939576749212/">Link memoji 3</a>
+			<a href="https://id.pinterest.com/pin/326018460529993446/ ">Link memoji 4</a>
+			<!-- elemen a dengan href untuk menghubungkan tautan -->
+		</div>
+
+		<!-- display Sidebar -->
+		<div class="sidebar"><!-- untuk mengelompokkan elemen menjadi satu class sidebar -->
+				<p>Klik <a href="https://environment-indonesia.com/articles/upaya-pelestarian-lingkungan-hidup/">disini</a> selengkapnya mengenai upaya pelestarian lingkungan</p> 
+				<img src="img/lingkungan.jpg" alt="foto tanaman">
+				<p><a href="https://www.indorelawan.org/">klik</a> untuk ambil peran jadi Relawan di Indonesia</p>
+				<p><a href="https://www.greenpeace.org/indonesia/aksi/bergabung-menjadi-relawan/">klik</a> Untuk bergabung Relawan Indonesia Asia Tenggara</p>
+				<!-- elemen a dengan href untuk menghubungkan tautan website lain -->
+        </div>
+	</div>
+
+	<!-- display footer -->
+	<div class="footer">
+        <div class="footer-wrapper">
+            <div class="lingkaran" id="img1"></div>
+            <div class="lingkaran" id="img2"></div>
+            <div class="lingkaran" id="img3"></div>
+            <div class="lingkaran" id="img4"></div>
+            <div class="lingkaran" id="img5"></div>
+             <!-- mengelompokkan elemen menjadi satu class lingkaran dan selector id untuk dipanggil dan ditampilkan pada halaman web-->
+        </div><br>
+        <p>Tim 04 DPW B © 2022 | All Right Reserved</p>
+        <p>Designed By TIM 04 DPW B</p>
+        <!-- elemen <p> untuk membuat paragraph dalam web browser -->
+    </div>
+
+</body>
+</html>

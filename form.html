@@ -1,0 +1,143 @@
+<!DOCTYPE html> <!-- deklarasi tipe dokumen html-->
+<html lang="id"> <!-- container/root dokumen html-->
+
+<head> <!-- menampilkan informasi yang tidak ditampilkan pada halam web-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- untuk memanggil file css supaya terhubung ke html-->
+	<title>Pendaftaran Relawan</title>
+</head>
+
+<body> <!-- elemen yang isinya akan tampil pada halaman web-->
+	
+
+	<div class="header"><!-- untuk mengelompokkan elemen menjadi satu class header -->
+            <div>
+                <h1>JATIM Gogreen</h1><!-- untuk memberikan judul pada header-->
+				<h2>Mari Bergabung Menjadi Relawan</h2><!--untuk memberikan sub judul pada header-->
+            </div>
+    </div>
+
+
+	<div class="menu">
+		<a href="index.html">Homepage</a> 
+		<a href="form.html"  class="aktif">Pendaftaran Relawan</a>
+		<a href="evaluation.html">Evaluation</a>
+		<a href="aboutus.html">About Us</a>
+		<!-- elemen <a> dengan atribut href untuk membuat link menuju dokumen lain -->
+	</div>
+
+
+	<div class="content-wrapper">
+		<div class="content" id="cbg"><!--class untuk bagian konten-->
+			<h3> Form Pendaftaran Relawan</h3><!--Membuat h3 sebagai judul dari isi konten-->
+			<div class="kotakform"><!--kotak yang berwarna abu abu untuk memperindah pandangan agar terfokus ke form inputan-->
+				<form name="iniform" action="evaluation.html" method="post" onsubmit="return cekkeseluruhan();"><!--tag pembuka form dan action setelah di klik submit akan menuju ke evaluation.html dan melakukan falidasi di function utama di file javascript-->
+					<label for="nama">Nama Anda :</label><!--membuat label untuk bagian nama-->
+					<input type="text" name="nama" id="nama" class="styleinput"><!--membuat inputan untuk bagian input nama-->
+					<div class="eror" id="masalahnama"></div><!--class kosong yang akan ada isinya jika kondisi dari isi inputan nama bernilai false-->
+					<label for="telepon">Nomor Telepon Anda :</label><!--label untuk bagian nomor telepon-->
+					<input type="text" name="telepon" id="telepon" placeholder="08**********" class="styleinput"><!--inputan untuk nomor telepon-->
+					<div class="eror" id="masalahtelepon"></div><!--class kosong untuk pesan eror untuk inputan telepon-->
+					<label for="email">Masukkan Email Anda :</label><!--label untuk inputan email-->
+					<input type="text" name="email" id="email" placeholder="contoh:abcd@gmail.com" class="styleinput"><!--inputan untuk email-->
+					<div class="eror" id="masalahemail"></div><!--class kosong untuk pesan eror untuk inputan email-->
+					<label for="psword">Masukkan Password :</label><!--label untuk password-->
+					<input type="text" name="password" id="psword" class="styleinput"><!--inputan untuk password-->
+					<div class="eror" id="masalahpassword"></div><!--class kosong untuk pesan eror inputan password-->
+					<div class="boxkelamin"><!--class untuk bagian jenis kelamin-->
+						<label>Masukkan Jenis Kelamin Anda :</label><br><!--label untuk jenis kelamin-->
+						<label for="laki-laki">Laki-laki</label><input type="radio" name="nilai" id="laki-laki" class="genderini"><!--inputan jenis kelamin untuk laki-laki-->
+						<label for="perempuan">Perempuan</label><input type="radio" name="nilai" id="perempuan" class="genderini"><!--inputan intuk jenis kelamin perempuan-->
+						<div class="eror" id="masalahgender"></div><!--class kosong untuk pesan eror inputan jenis kelamin-->
+					</div>
+					<br>
+					<label for="tanggal">Masukkan Tanggal </label><!--label untuk memasukkan tanggal-->
+					<input type="text" name="tanggal" id="tanggal" placeholder="yyyy-mm-dd" class="styleinput"><!--inputan untuk tanggal-->
+					<div class="eror" id="masalahtanggal"></div><!--class kosong yang digunakan untuk menampilkan pesan eror saat inputan tanggal bernilai salah-->
+					<label for="kabupaten">Pilih Kabupaten :</label><!--label untuk memilih kabupaten-->
+					<input name="inikabupaten" id="kabupaten" list="listkabupaten" class="styleinput"><!--inputan dropdown kabupaten-->
+						<datalist id="listkabupaten"><!--datalist dropdown inputan kabupaten-->
+							<option value="Kota Surabaya"></option><!--isi dari data list-->
+							<option value="Kota Blitar"></option><!--isi dari data list-->
+							<option value="Kota Batu"></option><!--isi dari data list-->
+							<option value="Kota Madiun"></option><!--isi dari data list-->
+							<option value="Kota Malang"></option><!--isi dari data list-->
+							<option value="Kota Mojokerto"></option><!--isi dari data list-->
+							<option value="Kota Probolinggo"></option><!--isi dari data list-->
+							<option value="Kota Pasuruan"></option><!--isi dari data list-->
+							<option value="Kota Kediri"></option><!--isi dari data list-->
+							<option value="Kabupaten Nganjuk"></option><!--isi dari data list-->
+							<option value="Kabupaten Bangkalan"></option><!--isi dari data list-->
+							<option value="Kabupaten Ngawi"></option><!--isi dari data list-->
+							<option value="Kabupaten Magetan"></option><!--isi dari data list-->
+							<option value="Kabupaten Jombang"></option><!--isi dari data list-->
+							<option value="Kabupaten Gresik"></option><!--isi dari data list-->
+							<option value="Kabupaten Mojokerto"></option><!--isi dari data list-->
+							<option value="Kabupaten Banyuwangi"></option><!--isi dari data list-->
+							<option value="Kabupaten Blitar"></option><!--isi dari data list-->
+							<option value="Kabupaten Malang"></option><!--isi dari data list-->
+							<option value="Kabupaten Bojonegoro"></option><!--isi dari data list-->
+							<option value="Kabupaten Tulungagung"></option><!--isi dari data list-->
+							<option value="Kabupaten Jember"></option><!--isi dari data list-->
+							<option value="Kabupaten Lamongan"></option><!--isi dari data list-->
+							<option value="Kabupaten Lumajang"></option><!--isi dari data list-->
+							<option value="Kabupaten Madiun"></option><!--isi dari data list-->
+							<option value="Kabupaten Pacitan"></option><!--isi dari data list-->
+							<option value="Kabupaten Pamekasan"></option><!--isi dari data list-->
+							<option value="Kabupaten Pasuruan"></option><!--isi dari data list-->
+							<option value="Kabupaten Sumenep"></option><!--isi dari data list-->
+							<option value="Kabupaten Ponorogo"></option><!--isi dari data list-->
+							<option value="Kabupaten Probolinggo"></option><!--isi dari data list-->
+							<option value="Kabupaten Sidoarjo"></option><!--isi dari data list-->
+							<option value="Kabupaten Sampang"></option><!--isi dari data list-->
+							<option value="Kabupaten Situbondo"></option><!--isi dari data list-->
+							<option value="Kabupaten Trenggalek"></option><!--isi dari data list-->
+							<option value="Kabupaten Tuban"></option><!--isi dari data list-->
+							<option value="Kabupaten Bondowoso"></option><!--isi dari data list-->
+						</datalist>
+					<div class="eror" id="masalahkabupaten"></div><!--class kosong untuk menampilkan pesan eror ketika inputan kabupaten bernilai false-->
+					<label for="alamat">Masukkan alamat</label><br><!--label untuk memasukkan alamat-->
+					<textarea name="alamat" id="alamat" class="styleinput" placeholder="isi alamat anda disini"></textarea><!--inputan untuk alamat yang berupa textarea-->
+					<div class="eror" id="masalahalamat"></div><!--class kosong untuk menampilkan pesan eror ketika inputan alamat bernilai false-->
+					<label>Pilih Balasan anda :</label><br><!--label intuk balasan-->
+					<label>Telepon</label><input type="checkbox" name="checkbox1"><!--label dan inputan untuk pilihan telepon-->
+					<label>Email</label><input type="checkbox" name="checkbox2"><!--label dan inputan untuk pilihan email-->
+					<label>Line</label><input type="checkbox" name="checkbox3"><!--label dan inputan untuk pilihan line-->
+					<label>Telegram</label><input type="checkbox" name="checkbox4"><!--label dan inputan untuk pilihan telegram-->
+					<div class="eror" id="masalahcheckbox"></div><!--class kosong untuk menampilkan pesan eror ketika inputan balasan bernilai false-->
+					<div class="sbmt"><!--class sbmt untuk bagian button submit-->
+						<input type="submit" value="KIRIM" class="submit"><!--tombol button untuk submit-->
+					</div>
+				</form><!--penutup form-->
+			</div><!--penutup kotakform-->
+		</div>
+		
+		<script src="validasi.js"></script><!--pemanggilan file javascript-->
+		
+
+		<div class="sidebar"><!-- untuk mengelompokkan elemen menjadi satu class sidebar -->
+				<p>Klik <a href="https://environment-indonesia.com/articles/upaya-pelestarian-lingkungan-hidup/">disini</a> selengkapnya mengenai upaya pelestarian lingkungan</p> 
+				<img src="img/lingkungan.jpg" alt="foto tanaman">
+				<p><a href="https://www.indorelawan.org/">klik</a> untuk ambil peran jadi Relawan di Indonesia</p>
+				<p><a href="https://www.greenpeace.org/indonesia/aksi/bergabung-menjadi-relawan/">klik</a> Untuk bergabung Relawan Indonesia Asia Tenggara</p>
+				<!-- elemen a dengan href untuk menghubungkan tautan website lain -->
+        </div>
+	</div>
+
+	<div class="footer"> <!-- section footer-->
+        <div class="footer-wrapper">
+            <div class="lingkaran" id="img1"></div>
+            <div class="lingkaran" id="img2"></div>
+            <div class="lingkaran" id="img3"></div>
+            <div class="lingkaran" id="img4"></div>
+            <div class="lingkaran" id="img5"></div>
+            <!-- mengelompokkan elemen menjadi satu class lingkaran dan selector id untuk dipanggil dan ditampilkan pada halaman web-->
+        </div><br>
+        <p>Tim 04 DPW B © 2022 | All Right Reserved</p>
+        <p>Designed By TIM 04 DPW B</p>
+        <!-- elemen <p> untuk membuat paragraph dalam web browser -->
+    </div>
+
+</body>
+</html>

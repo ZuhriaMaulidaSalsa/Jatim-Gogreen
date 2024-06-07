@@ -1,0 +1,308 @@
+
+/*aturan tampilan mencakup seluruh halaman web*/
+body{
+    padding: 0; /*  Berfungsi untuk memberikan ruang space disekitar elemen */
+    margin: 0; /* Berfungsi untuk mengatur batas */
+    box-sizing: border-box; /* Berfungsi untuk membuat suatu box elemen memiliki width dan height tetap dalam ukuran aslinya */
+    font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; /* Untuk merubah jenis font yang digunakan */
+    }
+
+
+
+    /*aturan tampilan section header*/
+    .header{
+        background-image: url(img/headbg.jpg);
+        background-size: cover; /*agar ukuran gambar menutupi seluruh bagian header*/
+        padding: 10px 20px;/*  Berfungsi untuk memberikan ruang space disekitar elemen */
+        
+    }
+
+    .header img{
+        width: 100px; /* Untuk mengatur lebar suatu objek */
+        margin-right: 20px; /* Untuk mengatur batas sebelah kanan */
+    }
+
+    .header h1{
+        /* Mengatur heading di dalam class header */
+        font-family:Helvetika; /* mengatur jenis font */
+        text-align:left;/* mengatur letak tulisan */
+        font-size:70px;/* mengatur ukuran tulisan */
+        color:#99A799;/* mengatur warna tulisan */
+
+        
+    }
+
+    .header h2{
+        font-family:Helvetika; /* mengatur jenis font */
+        text-align:left; /* mengatur letak tulisan */
+        font-size:40px; /* mengatur ukuran tulisan */
+        color: #4c4c4c; /* mengatur warna tulisan */
+        margin-top:-50px; /* mengatur warna batas atas sebanyak -50px agar tulisan lebih naik keatas */
+        margin-left:100px; /* mengatur warna batas kiri sebanyak 100px agar tulisan lebih naik keatas */
+    }
+
+    
+
+
+
+
+
+    /*aturan tampilan section menu*/
+    .menu{
+        background: #99A799; /* Untuk memberi warna pada halaman web */
+        display: flex; /* Untuk membuat elemen didalamnya sejajar kesamping dengan rapi */
+        padding-left: 40px; /* Untuk memberikan ruang space disebelah kiri */
+    }
+
+    .menu a{
+        text-decoration: none; /* Untuk menghilang efek garis pada kata */
+        color: white; /* Untuk memberikan warna putih pada kata */
+        padding: 13px 10px; /*  Berfungsi untuk memberikan ruang space disekitar elemen */
+        display: block; /* Berfungsi agar selalu membuat blok baru pada tampilan */
+    }
+
+
+    .menu a:hover{
+        background: #D3E4CD; /* Untuk memberi warna pada halaman web */
+        transition: 0.5s; /* Untuk menampilkan efek transisi */
+    }
+
+    .aktif{
+        background-color:#CDD0CB; /* Untuk menampilan warna latar pada elemen */
+        color: black; /* Untuk memberikan warna hitam pada kata */
+    }
+
+
+
+    /*aturan tampilan section content*/
+    .content-wrapper{
+        display: flex;/* Untuk membuat elemen didalamnya sejajar kesamping dengan rapi */
+    }
+
+    
+    .content{
+        width: 75%; /* Untuk mengatur lebar suatu objek */
+        background: #F1F7E7; /* Untuk memberi warna pada halaman web */
+        color: black; /* Untuk memberikan warna hitam pada kata */
+        padding: 30px 50px; /*  Berfungsi untuk memberikan ruang space disekitar elemen */
+    }
+
+    .content h1 {
+        text-align: center; /*mengatur letak tampilan teks pada halaman web*/
+    }
+
+    .content h2{
+        font-family:Brush Script MT bold; /* mengatur jenis font */
+        text-align: center; /* mengatur letak tulisan */
+        font-size:28px; /* mengatur ukuran tulisan */
+        font-weight: lighter;  
+    }
+
+    .content-name{
+        display: flex; /* Untuk membuat elemen didalamnya sejajar kesamping dengan rapi */
+        flex-wrap: wrap; /* untuk mengatur jika konten melebihi container */
+    }
+
+    .content-name div:hover{background-color: #dfdfde;} /* menampilkan sebuah warna ketika kursor berada diatas objek */
+
+    .content-name div{
+        padding: 20px; /* Untuk memberikan ruang space */
+        border-radius: 5px;
+    }
+	.event {
+		opacity: 0.8;/*memberikan sentuhan transparasi*/
+		 background: #dfdfde;
+         padding: 20px;
+         border-radius: 5px;
+	}
+	
+	.note{
+		opacity: 0.8;/*memberikan sentuhan transparasi*/
+		background: #dfdfde;
+	}
+	
+
+    img{
+        width: 60px; /* mengatur lebar gambar */
+        height: 60px;/* mengatur tinggi gambar */
+    }
+
+    
+    .content a{ 
+        text-decoration: none; /* mengatur tampilan teks seperti garis bawah,tebal,ataupun miirng pada teks */
+        display: block; /* untuk membuat tampilan berentuk blok */
+        width: fit-content; /* mengatur lebar blok */
+        color: darkpink; /* mengatur warna huruf */
+        font-size: 10pt; /* mengatur ukuran huruf */
+    }
+
+    .content a:hover{ background-color: white; } /* memberi efek transparasi pada objek */
+
+
+    /* content background*/
+    #cbg{
+        background-image: url(img/cbg.jpg); /* memanggil gambar pada folder untuk tampil di halaman web */
+        background-size: cover; /* mengatur ukuran gambar background */
+    }
+
+
+
+
+
+    /*aturan tampilan tabel dalam konten halaman web*/
+    table,td,th,tr{
+        border: 1px solid; /* Untuk memberikan garis pada tabel */
+        border-collapse: collapse; /* Untuk membuat model border yang spesifik pada table */
+        padding: 5px; /*  Berfungsi untuk memberikan ruang space disekitar elemen */
+    }
+
+    table{
+        opacity: 0.9;/*memberikan sentuhan transparasi pada tabel*/
+        background: #dfdfde; /* Untuk memberi warna pada halaman web*/
+        width: 90%; /* Untuk mengatur lebar suatu objek */
+        margin-right: auto;  /* Untuk mengatur batas sebelah kanan */
+        margin-left: auto;  /* Untuk mengatur batas sebelah kiri */
+    }
+    
+    th{
+        background: #2d5279 ; /* Untuk memberi warna */
+    }
+
+    tr:hover {background-color: lightcyan;} /* Untuk memberikan warna pada objek apabila kursor berada diatas objek tersebut */
+    
+    
+
+
+
+
+
+    
+    /*aturan tampilan section sidebar*/
+    .sidebar{
+        width: 25%; /* Untuk mengatur lebar suatu objek */
+        background: #CDD0CB; /* Untuk memberi warna pada halaman web*/
+        padding: 20px; /*  Berfungsi untuk memberikan ruang space disekitar elemen */
+    }
+
+    .sidebar h1{
+        font-size: 18px; /* Untuk mengatur ukuran font */
+        font-weight: 600; /* Untuk mengatur ketebalan font */
+    }
+
+    .sidebar img{
+        width:300px; /* mengatur lebar gambar*/
+        height:200px; /* mengatur tinggi gambar */
+    }
+
+    .sidebar a:hover{ 
+        background: #99A799; /* memberi warna berbeda pada saat kursor berada diatas objek tersebut*/
+        color: black; /* merubah warna teks */
+    }
+
+
+
+
+
+
+
+
+
+    /*aturan tampilan section footer*/
+    .footer{
+        text-align: center; /* Untuk mengatur posisi kata berada ditengah */
+        background: #99A799; /* Untuk memberi warna pada halaman web*/
+        padding: 30px 0; /* Untuk memberikan ruang space disekitar elemen */
+        font-size: 8pt; /* Untuk mengatur ukuran font */
+        font-weight: bold; /* Untuk mengatur ketebalan font */
+        color: #CDD0CB; /* Untuk memberikan warna pada kata */
+    }
+
+    .footer-wrapper{
+        display: flex; /* Untuk membuat elemen didalamnya sejajar kesamping dengan rapi */
+        justify-content: center; /* Berfungsi untuk mensejajarkan item -item di tengah*/
+    }
+
+
+    /*membuat bentuk lingkaran untuk ditempati icon" sosial media*/
+    .lingkaran{
+        width: 40px; /* Untuk mengatur lebar objek */
+        height: 40px; /* Untuk mengatur tinggi objek */
+        background-size: 40px; /* Untuk mengatur ukuran background */
+        border-radius: 100%; /* Untuk mengatur semua sudut */
+        margin: 5px; /* Untuk memberikan ruang space diluar elemen */
+    }
+
+    .lingkaran:hover {opacity: 0.5;} /* Untuk memberikan transparansi pada objek */
+   
+
+    /*hyperlink gambar icon social media*/
+    #img1{
+        background-image: url(img/instagram.jpg); /* memanggil gambar dalam folder untuk ditampilkan pada halaman web */
+    }
+
+
+    #img2{
+        background-image: url(img/twitter.jpg); /* memanggil gambar dalam folder untuk ditampilkan pada halaman web */
+    }
+
+    #img3{
+        background-image: url(img/facebook.jpg); /* memanggil gambar dalam folder untuk ditampilkan pada halaman web */
+    }
+
+    #img4{
+        background-image: url(img/youtube.jpg); /* memanggil gambar dalam folder untuk ditampilkan pada halaman web */
+    }
+
+    #img5{
+        background-image: url(img/gmail.jpg); /* memanggil gambar dalam folder untuk ditampilkan pada halaman web */
+    }
+
+
+
+    .eror {/*memanggil class eror*/
+        color: red; /*mengatur warna font di class eror menjadi merah*/
+        margin-left: 40px;/*mengatur jarak di luar kiri class eror sebesar 110px*/
+    }
+    label {/*memanggil tag elemen label*/
+        margin-left: 40px;/*mengatur jarak di luar kiri tag label sebesar 110px*/
+    }
+    .styleinput{/*memanggil tag input*/
+        display: block;/*mengatur display input block*/
+        border: none;/*mengatur border input menjadi tidak ada bordernya*/
+        border-bottom: 3px solid black;/*mengatur border bawah sebesar 3px berwarna hitam*/
+        background-color: #CDD0CB;/*mengatur warna background inputan berwarna #CDD0CB*/
+        outline: none;/*mengatur outline menjadi tidak ada outlinenya*/
+        margin-left: 40px;/*mengatur jarak di luar kiri tag input sebesar 110px*/
+        width: 450px;/*mengatur lebar tag input sebesar 110px*/
+        padding: 5px;
+
+    }
+    .kotakform {/*memanggil class kotakform*/
+        opacity: 0.8; /* mamberi efek transparan pada objek */
+        background: #CDD0CB;/*mengatur warna background berwarna #CDD0CB*/
+        border-radius: 7px;/*mengatur kelengkungan sudut pada class kotakform*/
+        margin-right: 200px;/*mengatur jarak di luar kanan class kotakform sebesar 180px*/
+        margin-left: 100px;/*mengatur jarak di luar kiri class kotakform sebesar 200px*/
+        padding: 25px;/*mengatur jarak di dalam class kotakform sebesar 15px*/
+        justify-content: center;
+    }
+    textarea {/*memanggil tag textarea*/
+        margin-left: 40px;/*mengatur jarak di luar kiri tag textarea sebesar 110px*/
+        background-color: #CDD0CB;/*mengatur warna background textarea berwarna #CDD0CB*/
+        width: 450px;/*mengatur lebar tag textarea sebesar 300px*/
+        height: 80px;/*mengatur tinggi tag textarea sebesar 80px*/
+    }
+    .sbmt input{/*memanggil tag input di dalam class sbmt*/
+        background-color: #007bff;/*mengatur warna background inputan berwarna #007bbff*/
+        border-color: #007bff;/*mengatur warna border inputan berwarna #007bff*/
+        margin-left: 425px;/*mengatur jarak di luar kiri tag input didalam class sbmt sebesar 450px*/
+        width: 70px;/*mengatur lebar sebesar 70px*/
+        height: 30px;/*mengatur tingginya menjadi 30px*/
+        border-radius: 4px;/*mengatur kelengkungan sudut pada tag input di dalam class sbmt*/
+        margin-top: 20px;
+        color: white;
+
+    }
+    .sbmt:hover{/*memanggil mengatur class sbmt jika kursor diarahkan di class sbmt maka opacity berubah sebesar 0.8*/
+        opacity: 0.8;/*mengatur opacity class sbmt*/
+    }
